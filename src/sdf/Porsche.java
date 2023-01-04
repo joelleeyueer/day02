@@ -16,8 +16,8 @@ public class Porsche extends Car{
 
     public String getTurbo() { return turbo;}
 
-    @Override
-    public void setColour(String colour) {};
+    //@Override
+    //public void setColour(String colour) {};
 
     public void accelerate(){
         this.accelerate++;
