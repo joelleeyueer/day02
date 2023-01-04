@@ -3,28 +3,28 @@ package src.sdr_cards;
 public class Cards {
     public String ranks;
     public String suit;
-    public String value;
+    public Integer value;
 
-    public Cards() {
-    }
-
-    public void getSuit() {
-        return;
-    }
-
-    public void setSuit(String suit) {
+    //constructor will alr construct cards, don't need setter
+    public Cards(String ranks, String suit, Integer value) {
+        this.ranks = ranks;
         this.suit = suit;
+        this.value = value;
     }
 
     public String getRanks() {
         return ranks;
     }
 
-    public void setRanks(String ranks) {
-        this.ranks = ranks;
+    public String getSuit() {
+        return suit;
+    }
+
+    public int getValue() {
+        return value;
     }
 
     public String toString() {
-        return ranks + suit;
+        return ranks + " of " + suit;
     }
 }
